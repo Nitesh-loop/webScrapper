@@ -1,0 +1,32 @@
+#The error with the installation of charset-normalizer, specifically with writing the executable file. Let's try a few more steps to resolve this:
+
+//Step 1: Clean Up Previous Installations
+//First, ensure that no partial installations are causing conflicts:
+
+pip uninstall requests charset-normalizer idna urllib3 certifi
+
+//Step 2: Clear the pip Cache
+//Sometimes, clearing the pip cache can help resolve installation issues:
+
+pip cache purge
+
+Step 3: Manually Install the Problematic Package
+Try installing charset-normalizer separately to see if the issue persists:
+
+pip install charset-normalizer
+
+//Step 4: Install Requests Again
+//After successfully installing charset-normalizer, proceed with installing requests:
+
+pip install requests
+
+//Step 5: Check Python and pip Versions
+//Ensure you are using the latest versions of Python and pip:
+
+python --version
+pip --version
+pip install --upgrade pip
+
+
+
+----------------------------------------------------------------------------------------------------
